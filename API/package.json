@@ -1,21 +1,24 @@
 {
   "name": "docker-intro-api",
   "version": "1.0.0",
-  "description": "trabalho SD",
+  "description": "trabalho sistemas distribuidos",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "nodemon ./src/index"
   },
   "keywords": [
     "Docker"
   ],
-  "author": "Marcelo Assis",
+  "author": "Marcelo de Assis pereira",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.4"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "mysql": "^2.18.1"
+},
+"dependencies": {
+  "express": "^4.17.1",
+  "mysql": "^2.18.1"
   }
 }
+
+

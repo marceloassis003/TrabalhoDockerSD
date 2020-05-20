@@ -1,8 +1,7 @@
-CREATE DATABASE IF NOT EXISTS 
-    trabalhoSD;
+CREATE DATABASE IF NOT EXISTS  trabalhoSD;
 USE trabalhoSD;
 
-CREATE TABLE if NOT EXISTS quarentena(
+CREATE TABLE IF NOT EXISTS quarentena (
   id int(14) AUTO_INCREMENT,
   atividade VARCHAR(300),
   descricao VARCHAR(222),
