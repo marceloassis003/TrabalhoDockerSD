@@ -7,8 +7,8 @@
 </head>
 <body>
     <?php
-        $result = file_get_contents("http://node-container:9000/quarentena");
-        $quarentena = jason_decode($result);
+        $result = file_get_contents("http://sd-node-container:9001/quarentena");
+        $quarentena = json_decode($result);
     ?>
 
     <table>
@@ -19,10 +19,10 @@
         </tr>
     </thead>
     <tbody>
-        <?php foreach($quarentena as $quarentena): ?>
+        <?php foreach($quarentena as $quarentenas): ?>
             <tr> 
-                <td>?php echo $quarentena->Atividade; ?></td>
-                <td>?php echo $quarentena->descricao; ?></td>
+                <td>?php echo $quarentenas->Atividade; ?></td>
+                <td>?php echo $quarentenas->descricao; ?></td>
             </tr>
         <?php endforeach; ?>
     </tbody>
